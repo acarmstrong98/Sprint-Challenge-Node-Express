@@ -3,12 +3,13 @@
 // code away!
 
 const express = require('express')
-const ProjectsRouter = require('./data/routers/projectsRouter.js')
-const ActionsRouter = require('./data/routers/actionsRouter.js')
+const ProjectRouter = require('./data/routers/project-router.js')
+const ActionRouter = require('./data/routers/action-router.js')
+
 const server = express()
+
 server.use(express.json())
-// server.use('/api/posts', ProjectRouter)
-// server.use('/api/users', ActionRouter)
+
 const PORT = 5000
 
 server.get('/', (req, res) => {
