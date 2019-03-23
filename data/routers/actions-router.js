@@ -89,3 +89,5 @@ router.get('/', async (req, res) => {
         errorMessage: 'Please provide content for the action change.'
       })
   })
+
+  module.exports = router

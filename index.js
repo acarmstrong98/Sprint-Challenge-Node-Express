@@ -9,6 +9,8 @@ const ActionRouter = require('./data/routers/action-router.js')
 const server = express()
 
 server.use(express.json())
+server.use('/api/projects', projects-router)
+server.use('/api/actions', actions-router)
 
 const PORT = 5000
 
